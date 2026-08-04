@@ -1,0 +1,13 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+
+# Local run output — rulings and workspaces are generated, not part of the skill
+/runs/
+/output/
+*.local.md

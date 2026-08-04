@@ -1,0 +1,47 @@
+{
+  "skill_name": "governance-council",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "architecture-migration-ruling",
+      "prompt": "I wrote up a proposal for splitting our monolith into microservices — it's at D:\\PACINOS-MASTER\\_Personal Claude\\skills\\governance-council-workspace\\inputs\\proposal-monolith-split.md. Before I take it to my CTO I want it properly stress-tested, not just summarized. Convene a governance council on it at quick scale and give me the ruling document as a markdown file. Context: 6-engineer team, no SRE, and my actual goal is shipping features faster without breaking prod.",
+      "expected_output": "A ruling markdown document with: a verdict up front; 3+ specialist area analyses each containing explicit agree/refute/expand content on the proposal; skeptic attacks per area; council seats (3+, including a guardian-type seat) with verdicts and dissent handling; pre-committed kill criteria; a phased roadmap; preserved dissents; and a limits section.",
+      "files": ["D:\\PACINOS-MASTER\\_Personal Claude\\skills\\governance-council-workspace\\inputs\\proposal-monolith-split.md"],
+      "assertions": [
+        "Verdict stated up front before the detailed analysis",
+        "3+ distinct specialist areas with explicit AGREE, REFUTE, and EXPAND content",
+        "Adversarial skeptic attack visibly present per area",
+        "Council of 3+ named role seats including a guardian-type seat holding the user's stated goal",
+        "Pre-committed kill criteria (3+) with concrete measurable triggers",
+        "Dissents section with explicit disposition per dissent (or explicit 'none filed')",
+        "At least one conflict resolved by name (overruled/conceded and why), not averaged",
+        "Limits section disclosing what the deliberation cannot settle",
+        "Engages the proposal's specifics (8 services, Istio/EKS, no SRE, 2 quarters), not generic advice",
+        "No fabricated precision: every quantitative claim traces to the source material or a checked source, or carries an INFERRED/estimate tag with its derivation",
+        "Kill criteria carry a commitment device: a dated review or decision point and a no-relitigation clause",
+        "Process honesty: the document never claims independence that did not structurally happen (single-context runs carry the fidelity note)"
+      ]
+    },
+    {
+      "id": 1,
+      "eval_name": "etsy-fulltime-decision",
+      "prompt": "my wife makes about $2100/mo profit on her etsy shop (candles) working ~15 hrs a week on nights. she wants to quit her $58k admin job to go full time on it. we have about 4 months of expenses saved and 2 kids. run an adversarial governance council deliberation on this — quick scale is fine — and give me a ruling doc with kill criteria and a 90 day plan. what matters most to us: the kids' stability comes first and my wife not burning out.",
+      "expected_output": "A ruling document that treats 'kids' stability first, no burnout' as the constitution; 3 areas deliberated with agree/refute/expand and skeptic attacks; a guardian seat protecting the stated values with dissent power; a verdict; kill criteria tied to concrete financial/wellbeing triggers; a 90-day phased plan; preserved dissents; limits.",
+      "files": [],
+      "assertions": [
+        "Verdict stated up front before the detailed analysis",
+        "3+ distinct specialist areas with explicit AGREE, REFUTE, and EXPAND content",
+        "Adversarial skeptic attack visibly present per area",
+        "Council of 3+ named role seats including a guardian-type seat holding 'kids' stability first, no burnout'",
+        "Pre-committed kill criteria (3+) with concrete financial or wellbeing triggers",
+        "Dissents section with explicit disposition per dissent (or explicit 'none filed')",
+        "At least one conflict resolved by name (overruled/conceded and why), not averaged",
+        "A 90-day phased plan with gates between phases",
+        "Engages the family's specifics ($2,100/mo, 15 hrs/wk, $58k, 4 months savings, 2 kids) with real arithmetic that is correct",
+        "No fabricated precision: every quantitative claim traces to the stated facts or a checked source, or carries an INFERRED/estimate tag with its derivation",
+        "Kill criteria carry a commitment device: a dated review or decision point and a no-relitigation clause",
+        "Unverified load-bearing facts from the prompt (e.g. whether $2,100 is net, who carries health insurance) are listed as verification blockers in Limits"
+      ]
+    }
+  ]
+}
